@@ -58,8 +58,13 @@
                 require_once( $CFG->dirroot . '/mod/forum/lib.php' );   // We'll need this
 
                 $text = '';
-
-                if (!$forums = $DB->get_records( "forum" , null , 'id ASC' )) {
+                $config = get_config('block_mylastforummessages');
+                if ($config->onlyannoucement) {
+                    $forums = $DB->get_records( "forum" , ['type' => 'news'] , 'id ASC' );
+                } else {
+                    $forums = $DB->get_records( "forum" , null , 'id ASC' );
+                }
+                if (!$forums) {
                     return '';
                 }
 
@@ -121,7 +126,6 @@
                     $discussions[$discussion->modified] = $discussion;
                     unset( $discussions[$key] );
                 }
-                $config = get_config('block_mylastforummessages');
                 $displaypostnumber = $config->displaypostnumber;
                 $messagelenghtmax = $config->messagelenghtmax;
                 krsort( $discussions );

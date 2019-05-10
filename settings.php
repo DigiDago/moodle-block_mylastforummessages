@@ -39,4 +39,11 @@
                         )
         );
 
+        $settings->add( new admin_setting_configcheckbox( 'block_mylastforummessages/onlyannoucement' ,
+                                                          get_string( 'onlyannoucement' , 'block_mylastforummessages' ) ,
+                                                          get_string( 'onlyannoucementdesc' , 'block_mylastforummessages'
+                                                          ) , 0
+                        )
+        );
+
     }

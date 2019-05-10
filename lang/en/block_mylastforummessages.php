@@ -27,4 +27,6 @@ $string['messagelenghtmax'] = 'Message max lenght';
 $string['messagelenghtmaxdesc'] = 'Define message max lenght';
 $string['displaypostnumber'] = 'Display number of post';
 $string['displaypostnumberdesc'] = 'Choose a number of post to display';
-$string['privacy:metadata'] = 'The Latest news block only shows data stored in the forum and does not store data itself.';
+$string['onlyannoucement'] = 'Display last post only for annoucement forum';
+$string['onlyannoucementdesc'] = 'Check this option and this plugin will only show new post from annoucement forum';
+$string['privacy:metadata'] = 'The last forum messages block only shows data stored in the forum and does not store data itself.';

@@ -23,7 +23,7 @@
 
     defined( 'MOODLE_INTERNAL' ) || die();
 
-    $plugin->version      = 2019051010;         // The current plugin version (Date: YYYYMMDDXX)
+    $plugin->version      = 2019051011;         // The current plugin version (Date: YYYYMMDDXX)
     $plugin->requires     = 2018112800;         // Requires this Moodle version
     $plugin->component    = 'block_mylastforummessages'; // Full name of the plugin (used for diagnostics)
     $plugin->dependencies = [ 'mod_forum' => 2018112800 ];
