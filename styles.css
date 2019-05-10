@@ -1,8 +1,10 @@
 .unlist .post {
     display: flex;
     width: 100%;
+    padding: 10px;
 }
 
 .unlist .post .head {
     flex: 1;
+    margin-left: 10px;
 }

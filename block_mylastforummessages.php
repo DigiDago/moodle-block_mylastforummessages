@@ -150,7 +150,8 @@
                              . '/mod/forum/discuss.php?d=' . $discussion->discussion . '">' . $discussion->subject
                              . '</a><div class="name">' . fullname( $discussion ) . ' - '
                              . userdate( $discussion->modified , $strftimerecent ) . '</div>' . '<div class="message">'
-                             . format_text( $discussion->message ) . '</div>' . '</div></div>' . "</li>\n";
+                             . format_text( strip_tags($discussion->message) . ' <a class="title" href="' . $CFG->wwwroot
+                             . '/mod/forum/discuss.php?d=' . $discussion->discussion . '">[ ' . get_string( 'readmore' , 'block_mylastforummessages' ) . ' ]</a>') . '</div></div></div>' . "</li>\n";
                 }
                 $text .= "</ul>\n";
 

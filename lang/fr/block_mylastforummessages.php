@@ -23,6 +23,7 @@
      */
 
     $string['pluginname'] = 'My last forum messages';
+    $string['readmore'] = 'Voir plus';
     $string['messagelenghtmax'] = 'Nombre maximum de caractères affichés';
     $string['messagelenghtmaxdesc'] = 'Défini le nombre de caractères qui sera affiché pour l\'aperçue du message';
     $string['displaypostnumber'] = 'Nombre de post à afficher';

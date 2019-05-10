@@ -23,6 +23,7 @@
  */
 
 $string['pluginname'] = 'My last forum messages';
+$string['readmore'] = 'Read more';
 $string['messagelenghtmax'] = 'Message max lenght';
 $string['messagelenghtmaxdesc'] = 'Define message max lenght';
 $string['displaypostnumber'] = 'Display number of post';
