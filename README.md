@@ -36,11 +36,8 @@ Upgrade Instructions
 Uninstallation
 ==============
  1. Put Moodle in 'Maintenance Mode' so that there are no users using it bar you as the administrator.
- 2. It is recommended but not essential to change all of the courses that use the format to another.  If this is
-    not done Moodle will pick the last format in your list of formats to use but display in 'Edit settings' of the
-    course the first format in the list.  You can then set the desired format.
- 3. In '/blocks/' remove the folder 'mylastforummessages' if moodle didn't.
- 5. Put Moodle out of Maintenance Mode.
+ 2. In '/blocks/' remove the folder 'mylastforummessages' if moodle didn't.
+ 3. Put Moodle out of Maintenance Mode.
 
 Version Information
 ===================
