@@ -48,17 +48,17 @@
             $this->content         = new stdClass;
             $this->content->text   = '';
             $this->content->footer = '';
+            $config = get_config('block_mylastforummessages');
 
             if (empty( $this->instance )) {
                 return $this->content;
             }
 
-            if ($this->page->course->newsitems) {   // Create a nice listing of recent postings
+            if ($config->displaypostnumber) {   // Create a nice listing of recent postings
 
                 require_once( $CFG->dirroot . '/mod/forum/lib.php' );   // We'll need this
 
                 $text = '';
-                $config = get_config('block_mylastforummessages');
                 if ($config->onlyannoucement) {
                     $forums = $DB->get_records( "forum" , ['type' => 'news'] , 'id ASC' );
                 } else {
@@ -85,6 +85,7 @@
                     // This sort will ignore pinned posts as we want the most recent.
 
                     $modinfo = get_fast_modinfo( $forum->course );
+
                     if ($modinfo) {
                         $cm = $modinfo->instances['forum'][$forum->id];
                         if ($cm) {
