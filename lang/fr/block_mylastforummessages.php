@@ -22,7 +22,7 @@
      * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
 
-    $string['pluginname'] = 'Mes derniers messages dans les forums';
+    $string['pluginname'] = 'Les derniers messages dans les forums de mes cours';
     $string['readmore'] = 'Voir plus';
     $string['messagelenghtmax'] = 'Nombre maximum de caractères affichés';
     $string['messagelenghtmaxdesc'] = 'Défini le nombre de caractères qui sera affiché pour l\'aperçue du message';
